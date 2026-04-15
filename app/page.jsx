@@ -1,6 +1,3 @@
-import { Fragment } from "react";
-import Image from "next/image";
-
 import { RevealButton } from "@/components/reveal-button";
 
 import { readFile } from "fs/promises";
