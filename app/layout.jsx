@@ -1,18 +1,8 @@
 import "./globals.css";
 
-import { Geist, Geist_Mono, Oxanium } from "next/font/google";
+import { Oxanium } from "next/font/google";
 
 import { cn } from "@/lib/utils";
-
-const geistSans = Geist({
-    variable: "--font-geist-sans",
-    subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-    variable: "--font-geist-mono",
-    subsets: ["latin"],
-});
 
 const oxanium = Oxanium({
     variable: "--font-oxanium",
@@ -38,3 +28,5 @@ export default function RootLayout({ children }) {
         </html>
     );
 }
+
+// inspiration: "React for Two Computers | Dan Abramov" -- https://youtu.be/ozI4V_29fj4
