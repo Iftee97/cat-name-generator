@@ -1,3 +1,5 @@
+import { connection } from 'next/server'
+
 import { RevealButton } from "@/components/reveal-button";
 
 import { readFile } from "fs/promises";
@@ -11,6 +13,8 @@ async function getRandomCatName() {
 }
 
 export default async function HomePage() {
+    await connection();
+    
     const catName = await getRandomCatName();
 
     console.log({ catName });
